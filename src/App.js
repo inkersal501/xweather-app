@@ -53,10 +53,10 @@ function App() {
         {loading && <p>Loading data...</p>}
 
         {showWeather && <div className='weather-cards'>
-          <WeatherCard title={"Temperature"} value={apiResponse.current.temp_c}/>
-          <WeatherCard title={"Humidity"} value={apiResponse.current.humidity}/>
+          <WeatherCard title={"Temperature"} value={apiResponse.current.temp_c} />
+          <WeatherCard title={"Humidity"} value={apiResponse.current.humidity+"%"}/>
           <WeatherCard title={"Condition"} value={apiResponse.current.condition.text}/>
-          <WeatherCard title={"Wind Speed"} value={apiResponse.current.wind_kph}/>
+          <WeatherCard title={"Wind Speed"} value={apiResponse.current.wind_kph+ " kph"}/>
         </div>}
 
     </div>
